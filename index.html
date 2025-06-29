@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1 id="title">Survey Form</h1>
+<link rel="stylesheet" href="styles.css"/>
+<p id="description">Please take a moment to answer the following survey!</p>
+<form id="survey-form">
+<fieldset>
+
+<div class="form-group">
+<label id ="name-label" for="name">Name
+<div class="form-group">
+    <input id="name"
+  name="name"
+  type="text" 
+  placeholder="Enter your name"
+  required/>
+  </label>
+
+<div class="form-group">
+  <label id="email-label" for="email">Email Address
+<div class="form-group">
+<input id="email"
+  name="email"
+  type="email"
+  placeholder="Enter your email"
+  required/>
+</label>
+
+<div class="form-group">
+<label id="number-label" for="number">Age
+<div class="form-group">
+<input id="number"
+  name="number"
+  type="number"
+  placeholder="Age"
+  required
+  min="0"
+  max="95"/>
+</label>
+
+<p>What is the role you're in?</p>
+<div class="form-group">
+<select id="dropdown">
+<option value>Beginner</option>
+<option value>Intermediate</option>
+<option value>Advanced</option>
+</select>
+
+
+<p>Would you recommend our servicse to others?</p>
+<div class="form-group">
+<label for="recommendation-yes"><input id="recommendation-yes" type="radio" name="recommendation" value="recommendation" class"inline" checked />Yes</label>
+
+<label for="recommendation-no"><input id="recommendation-no" type="radio" name="recommendation" value="recommendation" class"inline" />No</label>
+
+<p>How was the service you received?</p>
+<div class="form-group">
+<label for="checkbox1">
+<input id="checkbox1"
+name="checkbox"
+type="checkbox"
+value="checkbox"
+required/> Great!</label>
+
+<div class="form-group">
+<label for="checkbox2">
+<input id="checkbox2"
+name="checkbox"
+type="checkbox"
+value="checkbox"
+required/> Terrible!</label>
+
+<div class="form-group">
+<label for="leftover">Any recommendations?</label>
+<div class="form-group">
+<textarea id="leftover"></textarea>
+
+<div class="form-group">
+<input id="submit" type="submit" value="Submit"/>
+
+</fieldset>
+</form>
